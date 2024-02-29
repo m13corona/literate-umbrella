@@ -56,19 +56,20 @@ const questions = [
 
 inquirer.prompt(questions)
    .then(answers => {
-        console.log('Answers', answers);
+        console.log('answers', answers);
     })
     .catch(error => {
-        console.log('Error', error);
+        console.log('error', error);
     })
 
 
 
 // TODO: Create a function to write README file
 const fs = require ('fs');
-function writeToFile('README.md', data) {
 
-}
+fs.appendFile('README.md', `${process.argv[1]}\n`, (err) =>
+err
+)
 
 
 

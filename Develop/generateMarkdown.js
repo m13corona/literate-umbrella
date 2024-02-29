@@ -46,11 +46,9 @@ function generateMarkdown(data) {
   ## Tests
   
 
-
-
-
-
 `;
 }
+
+
 
 module.exports = generateMarkdown;
