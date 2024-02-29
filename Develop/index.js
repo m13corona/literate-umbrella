@@ -4,38 +4,58 @@
 // TODO: Create an array of questions for user input
 const inquirer = require ('inquirer');
 const questions = [
+
     {
-
     type: 'input',
-    name: 'name',
-    message: 'what is your name?'
+    name: 'projectTitle',
+    message: 'what is the title of your project?'
+    },
 
+    {
+    type: 'input',
+    name: 'description',
+    message: 'enter app description'
     },
     {
-
-    type: 'confirm',
-    name: 'dev',
-    message: 'are you a developer?'
-
+    type: 'input',
+    name: 'installationInstructions',
+    message: 'enter installation instructions'
     },
     {
-
     type: 'input',
-    name: 'age',
-    message: 'what year were you born in?'
-
-
+    name: 'usageInfo',
+    message: 'enter usage info'
+    },
+    {
+    type: 'input',
+    name: 'contributionGuidelines',
+    message: 'enter contribution guidelines'
+    },
+    {
+    type: 'input',
+    name: 'testInstructions',
+    message: 'enter test instructions'
     },
     {
     type: 'list',
-    name: 'confirm',
-    message: 'The sky is blue',
-    default: true
-    }
+    name: 'license',
+    message: 'choose a license',
+    choices: ['MIT', 'ISC', 'Unlicense']
+    },
+    {
+    type: 'input',
+    name: 'GitHub',
+    message: 'enter Github username'
+    },
+    {
+    type: 'input',
+    name: 'email address',
+    message: 'enter your email address'
+    },
 ];
 
 inquirer.prompt(questions)
-    .then(answers => {
+   .then(answers => {
         console.log('Answers', answers);
     })
     .catch(error => {
@@ -45,15 +65,14 @@ inquirer.prompt(questions)
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 const fs = require ('fs');
+function writeToFile('README.md', data) {
 
-fs.readFile('data.csv', 'utf8', (error, data) =>
-  error ? console.error(error) : console.log(data)
-);
-fs.writeFile('log.txt', process.argv[2], (err) =>
-  err ? console.error(err) : console.log('Success!')
-);
+}
+
+
+
+
 
 // TODO: Create a function to initialize app
 function init() {}
