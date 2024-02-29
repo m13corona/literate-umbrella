@@ -17,3 +17,6 @@ Watch a demo here: https://drive.google.com/file/d/1sTjjXrGIaCVOgPXxfKl0yDelQBk9
 
 ## Links 
 Repo: https://github.com/m13corona/literate-umbrella
+
+## Sources
+I made this project based what I learned in class and with the help of the Xpert Learning Assistant.
