@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
-// done
+
 
 // TODO: Create an array of questions for user input
 const inquirer = require ('inquirer');
 const questions = [
-
+ 
     {
     type: 'input',
     name: 'projectTitle',
@@ -55,11 +55,11 @@ const questions = [
 ];
 
 inquirer.prompt(questions)
-   .then(answers => {
-        console.log('answers', answers);
-    })
-    .catch(error => {
-        console.log('error', error);
+  .then(answers => {
+    console.log('answers', answers);
+   })
+ .catch(error => {
+     console.log('error', error);
     })
 
 
@@ -70,10 +70,6 @@ const fs = require ('fs');
 fs.appendFile('README.md', `${process.argv[1]}\n`, (err) =>
 err
 )
-
-
-
-
 
 // TODO: Create a function to initialize app
 function init() {}
